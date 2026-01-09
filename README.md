@@ -4,7 +4,7 @@
 
 [![VS Code Extension](https://img.shields.io/badge/VS%20Code-Extension-blue)](./merge-sense-ai-vscode)
 [![Next.js App](https://img.shields.io/badge/Next.js-Web%20App-black)](./merge-sense-ai)
-[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-red)](LICENSE)
 
 ---
 
@@ -210,7 +210,7 @@ Contributions are welcome! Please see individual project READMEs for contributio
 
 ## 📄 License
 
-MIT License - see [LICENSE](./LICENSE) file for details
+See [LICENSE](./LICENSE) file for details
 
 ---
 

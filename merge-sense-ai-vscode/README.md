@@ -3,7 +3,7 @@
 > **AI-powered Git Merge Conflict Resolver** that intelligently resolves merge conflicts using n8n workflows. Save hours of manual conflict resolution with confidence-based AI suggestions.
 
 [![VS Code Version](https://img.shields.io/badge/VS%20Code-1.74%2B-blue)](https://code.visualstudio.com/)
-[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-red)](../LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)](https://www.typescriptlang.org/)
 
 ---
@@ -578,7 +578,7 @@ npm run watch
 
 ## 📄 License
 
-MIT License - see [LICENSE](./LICENSE) file for details
+See [LICENSE](../LICENSE) file for details
 
 ---
 
