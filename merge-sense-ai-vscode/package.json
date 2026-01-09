@@ -1,0 +1,75 @@
+{
+  "name": "merge-sense-ai",
+  "displayName": "MergeSense AI",
+  "description": "AI-powered Git Merge Conflict resolver using n8n",
+  "version": "0.1.0",
+  "publisher": "mergesense",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:mergeSenseAI.resolveConflict",
+    "onLanguage:typescript",
+    "onLanguage:javascript",
+    "onLanguage:typescriptreact",
+    "onLanguage:javascriptreact"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "mergeSenseAI.resolveConflict",
+        "title": "MergeSense: Resolve Current Conflict",
+        "category": "MergeSense AI",
+        "icon": {
+          "light": "resources/light/icon.svg",
+          "dark": "resources/dark/icon.svg"
+        }
+      },
+      {
+        "command": "mergeSenseAI.openPanel",
+        "title": "MergeSense: Open Panel",
+        "category": "MergeSense AI"
+      }
+    ],
+    "configuration": {
+      "title": "MergeSense AI",
+      "properties": {
+        "mergeSenseAI.webhookUrl": {
+          "type": "string",
+          "default": "http://localhost:5678/webhook/git/conflict/resolve",
+          "description": "n8n webhook URL for conflict resolution"
+        },
+        "mergeSenseAI.apiKey": {
+          "type": "string",
+          "default": "",
+          "description": "API key for authenticating with n8n webhook (sent as Authorization: Bearer <key>). Optional - leave empty for development. See FUTURE_API_KEY_IMPLEMENTATION.md for details.",
+          "scope": "application"
+        },
+        "mergeSenseAI.timeout": {
+          "type": "number",
+          "default": 30000,
+          "description": "Request timeout in milliseconds (default: 30000 = 30 seconds)",
+          "scope": "application"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.74.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "@vscode/vsce": "^2.22.0"
+  },
+  "dependencies": {}
+}
+
